@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>number_phone</title>
+</head>
+<body>
+<script>
+    function numberPhone(num) {
+        let a = /^[0][893][23456789][0-9]{7}?$/;
+        a.test(num);
+        if (a.test(num)){
+            return true;
+        }
+        return false;
+    };
+    let b = '0843763456';
+    console.log("đây là số viettel: " + numberPhone(b));
+    let c = '0912314412';
+    console.log("đây không phải số viettel: " + numberPhone(c));
+</script>
+</body>
+</html>
